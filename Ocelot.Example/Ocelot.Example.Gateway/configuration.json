@@ -1,7 +1,7 @@
 {
   "ReRoutes": [
     {
-      "DownstreamPathTemplate": "/",
+      "DownstreamPathTemplate": "/precodoproduto/",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
