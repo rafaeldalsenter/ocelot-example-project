@@ -1,6 +1,16 @@
 {
   "ReRoutes": [
     {
+      "DownstreamPathTemplate": "/",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "container-ms-preco",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/precodoproduto/",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete", "Options" ]
     }
   ],
   "GlobalConfiguration": {}

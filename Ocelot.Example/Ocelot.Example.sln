@@ -5,9 +5,14 @@ VisualStudioVersion = 16.0.29324.140
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ocelot.Example.Gateway", "Ocelot.Example.Gateway\Ocelot.Example.Gateway.csproj", "{0C8BD2BD-6D42-4724-A4AE-046786E02991}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ocelot.Example.MsDePrecoDoProduto", "Ocelot.Example.MsDePrecoDoProduto\Ocelot.Example.MsDePrecoDoProduto.csproj", "{7172EF31-CA21-4C41-B95D-F3BBFDB66EC7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ocelot.Example.MsDePrecoDoProduto", "Ocelot.Example.MsDePrecoDoProduto\Ocelot.Example.MsDePrecoDoProduto.csproj", "{7172EF31-CA21-4C41-B95D-F3BBFDB66EC7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ocelot.Example.MsAuth", "Ocelot.Example.MsAuth\Ocelot.Example.MsAuth.csproj", "{B1B92E36-E17F-47AE-A436-241CBD5F5E00}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ocelot.Example.MsAuth", "Ocelot.Example.MsAuth\Ocelot.Example.MsAuth.csproj", "{B1B92E36-E17F-47AE-A436-241CBD5F5E00}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{11925EBD-07D7-4E6F-AA76-D302CE600A0D}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

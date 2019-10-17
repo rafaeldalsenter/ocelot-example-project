@@ -1,0 +1,30 @@
+version: '3'
+
+services:
+  gateway:
+    container_name: container-gateway
+    build:
+      context: .
+      dockerfile: ./Ocelot.Example.Gateway/Dockerfile
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "7000:80"
+    networks:
+      - minha-rede
+
+  microservice-preco:
+    container_name: container-ms-preco
+    build:
+      context: .
+      dockerfile: ./Ocelot.Example.MsDePrecoDoProduto/Dockerfile
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "7001:80"
+    networks:
+      - minha-rede
+
+networks:
+  minha-rede:
+    driver: bridge

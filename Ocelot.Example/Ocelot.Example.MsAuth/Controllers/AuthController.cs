@@ -23,10 +23,5 @@ namespace Ocelot.Example.MsAuth.Controllers
         {
             return false;
         }
-
-        [HttpPost]
-        public void Post()
-        {
-        }
     }
 }
