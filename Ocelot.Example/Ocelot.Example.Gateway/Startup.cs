@@ -4,6 +4,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Ocelot.DependencyInjection;
+using Ocelot.Example.Gateway.Handlers;
 using Ocelot.Middleware;
 using IHostingEnvironment = Microsoft.AspNetCore.Hosting.IHostingEnvironment;
 
@@ -21,7 +22,8 @@ namespace Ocelot.Example.Gateway
         public void ConfigureServices(IServiceCollection services)
         {
             services
-                .AddOcelot(_configuration);
+                .AddOcelot(_configuration)
+                .AddDelegatingHandler<BlackListHandler>(true);
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)

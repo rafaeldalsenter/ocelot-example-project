@@ -36,5 +36,8 @@
       "UpstreamPathTemplate": "/produto"
     }
   ],
+  "DelegatingHandlers": [
+    "BlackListHandler"
+  ],
   "GlobalConfiguration": {}
 }
