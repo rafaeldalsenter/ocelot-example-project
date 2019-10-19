@@ -1,7 +1,7 @@
 {
   "ReRoutes": [
     {
-      "DownstreamPathTemplate": "/{url}",
+      "DownstreamPathTemplate": "/precodoproduto",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
@@ -9,9 +9,31 @@
           "Port": 80
         }
       ],
-      "UpstreamPathTemplate": "/{url}",
       "UpstreamHttpMethod": [ "Get", "Post", "Put" ],
-      "Key": "Geral"
+      "UpstreamPathTemplate": "/precodoproduto",
+      "Key": "preco"
+    },
+    {
+      "DownstreamPathTemplate": "/validadedoproduto",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "container-ms-validade",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/validadedoproduto",
+      "UpstreamHttpMethod": [ "Get" ],
+      "Key": "validade"
+    }
+  ],
+  "Aggregates": [
+    {
+      "ReRouteKeys": [
+        "validade",
+        "preco"
+      ],
+      "UpstreamPathTemplate": "/produto"
     }
   ],
   "GlobalConfiguration": {}

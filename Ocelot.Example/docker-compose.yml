@@ -12,6 +12,9 @@ services:
       - "7000:80"
     networks:
       - minha-rede
+    depends_on:
+      - "microservice-preco"
+      - "microservice-validade"
 
   microservice-preco:
     container_name: container-ms-preco
@@ -22,6 +25,18 @@ services:
       - ASPNETCORE_ENVIRONMENT=Development
     ports:
       - "7001:80"
+    networks:
+      - minha-rede
+
+  microservice-validade:
+    container_name: container-ms-validade
+    build:
+      context: .
+      dockerfile: ./Ocelot.Example.MsDeValidadeDoProduto/Dockerfile
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "7002:80"
     networks:
       - minha-rede
 

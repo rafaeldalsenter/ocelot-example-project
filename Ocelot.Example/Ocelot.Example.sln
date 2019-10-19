@@ -14,6 +14,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		docker-compose.yml = docker-compose.yml
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Microservices", "Microservices", "{598B8713-01EE-48E2-9EBE-BBB02921CC0F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ocelot.Example.MsDeValidadeDoProduto", "Ocelot.Example.MsDeValidadeDoProduto\Ocelot.Example.MsDeValidadeDoProduto.csproj", "{A1D68F16-D3A0-4014-8FC5-D6968EF79702}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,9 +36,17 @@ Global
 		{B1B92E36-E17F-47AE-A436-241CBD5F5E00}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B1B92E36-E17F-47AE-A436-241CBD5F5E00}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B1B92E36-E17F-47AE-A436-241CBD5F5E00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1D68F16-D3A0-4014-8FC5-D6968EF79702}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1D68F16-D3A0-4014-8FC5-D6968EF79702}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1D68F16-D3A0-4014-8FC5-D6968EF79702}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1D68F16-D3A0-4014-8FC5-D6968EF79702}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7172EF31-CA21-4C41-B95D-F3BBFDB66EC7} = {598B8713-01EE-48E2-9EBE-BBB02921CC0F}
+		{A1D68F16-D3A0-4014-8FC5-D6968EF79702} = {598B8713-01EE-48E2-9EBE-BBB02921CC0F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7D0969DF-2511-44E8-BDDF-8E0E33ACB0F5}
